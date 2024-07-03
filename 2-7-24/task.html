@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Ga+Maamli&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+         :root{
+            --php: #ffc0c7;
+            --jq: #fff4a3;
+            --bs: #e7e9eb;
+            --java: #f3ecea;
+            --w3: #96d4d4;
+            --c: #d9eee1;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            padding: 25px;
+        }
+        .cont{
+            background-color: rgb(245, 237, 237);
+            height: auto;
+            border-radius: 15px;
+            padding: 18px;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        }
+        .cont div{
+            background-color: white;
+            display: inline-block;
+            margin-left:65px;
+            margin-bottom: 65px;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 45px;
+            color: orange;
+            font-style: italic;
+            text-shadow: 1px 2px 2px black;
+        }
+
+        .ant,.mamli,.frk,.gill,.lud,.seg,.time,.tre,.ari,
+        .cam,.geo,.imp,.ver,.mon{
+            text-align: center;
+            width:180px;
+            height: 75px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        }
+        .ant:hover {
+            background-color: black;
+            color:white;
+            font-family: "Anton SC", sans-serif;
+            font-style:normal;
+            text-shadow: 2px 2px 3px chartreuse;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+          
+        }
+        .mamli:hover{
+            background-color: brown;
+            color:white ;
+            font-family: "Ga Maamli", sans-serif;
+             font-weight: 400;
+             font-style: normal;
+             box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+        }
+        .frk:hover{
+            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .gill:hover{
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            background-color: var(--c);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+        .lud:hover{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            background-color: var(--jq);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         }
+        .seg:hover{
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            background-color: var(--w3);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+        }
+        .time:hover{
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+            background-color: var(--php);
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .tre:hover{
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+            background-color: var(--bs);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+        .ari:hover{
+            box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+            background-color: var(--bs);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .cam:hover{
+            box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+            background-color: var(--java);
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .geo:hover{
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+            background-color: var(--c);
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        .imp:hover{
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+             background-color: var(--bs);
+           font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .ver:hover{
+            box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+            background-color: var(--jq);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .mon:hover{
+            box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+            background-color: var(--java);
+            font-family: monospace;
+        }
+    
+      
+      
+     
+
+    </style>
+</head>
+<body>
+    
+    <div class="cont">
+        <h1>20 boxes using box-shadaw and hover</h1>
+        <div class="ant">
+            <p>Anton SC</p>
+        </div>
+        <div class="mamli">
+            <p>Ga Maamli</p>
+        </div>
+        <div class="gill">
+            <p>Gill sans</p>
+        </div>
+        <div class="lud">
+            <p>Lucida Sans</p>
+        </div>
+        <div class="seg">
+            <p>Segoe UI</p>
+        </div>
+        <div class="time">
+            <p>Times New </p>
+        </div>
+        <div class="tre">
+            <p>Trebuchet MS</p>
+       </div>
+       <div class="ari">
+        <p>Arial</p>
+       </div>
+       <div class="cam">
+        <p>Cambria</p>
+       </div>
+       <div class="geo">
+        <p>Georgia</p>
+       </div>
+       <div class="imp">
+        <p>Impact</p>
+       </div>
+       <div class="ver">
+        <p>Verdana</p>
+       </div>
+       <div class="mon">
+        <p>monospace</p>
+       </div>
+       <div class="ant">
+        <p>Anton SC</p>
+    </div>
+    <div class="mamli">
+        <p>Ga Maamli</p>
+    </div>
+    <div class="gill">
+        <p>Gill sans</p>
+    </div>
+    <div class="lud">
+        <p>Lucida Sans</p>
+    </div>
+    <div class="seg">
+        <p>Segoe UI</p>
+    </div>
+    <div class="time">
+        <p>Times New </p>
+    </div>
+    <div class="tre">
+        <p>Trebuchet MS</p>
+   </div>
+   <div class="ari">
+    <p>Arial</p>
+   </div>
+   <div class="cam">
+    <p>Cambria</p>
+   </div>
+   <div class="geo">
+    <p>Georgia</p>
+   </div>
+   <div class="imp">
+    <p>Impact</p>
+   </div>
+   <div class="gill">
+    <p>Gill sans</p>
+</div>
+        
+        
+    </div>
+
+</body>
+</html>
