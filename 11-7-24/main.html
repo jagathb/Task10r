@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        nav{
+            position: sticky;
+            top: 0;
+            background-color: white;
+        }
+       
+        .nav{
+            display:flex;
+            align-items: center;
+            justify-content: space-around;
+           
+        }
+        h1,h2,h3,h4,p,a{
+            font-family: "Karma", sans-serif;
+            font-weight: 100;
+
+        }
+        .fa-bars{
+            padding: 20px;
+            font-size: 22px;
+            
+        }
+        .fa-bars:hover{
+            background-color: lightgray;
+            
+        }
+       .box img{
+            width: 260px;
+            height: 360px;
+        }
+        main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content:center;
+            padding: 55px;
+           
+        }
+        .box{
+            width: 270px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 12px;
+            margin-bottom: 40px;
+           
+
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+           
+           
+        }
+        .content h3{
+            width: 250px;
+            text-align: center;
+            font-weight:700;
+           
+        }
+        .content p{
+            text-align: center;
+            margin-top: 15px;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 25px;
+           
+        }
+        hr{
+            width: 80%;
+            margin-left: 10%;
+        }
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: black;
+  color: white;
+}
+.pagination a:hover{
+    background-color: black;
+    color: white;
+}
+.foot a{
+    color: black;
+}
+
+article{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            padding: 45px;
+
+        }
+        h1{
+            padding:55px;
+        }
+        .artsub{
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            row-gap: 15px;
+
+        }
+        .artsub h3{
+            font-weight: 900;
+        }
+        .artsub h4{
+            font-style: italic;
+        }
+        .artsub p{
+            text-align-last: center;
+        }
+        footer{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            padding-left: 12%;
+            padding-right: 10%;
+            margin-top: 45px;
+            column-gap: 10px;
+            padding-top: 45px;
+           
+        }
+        footer img{
+            width: 50px;
+            margin-right: 8px;
+        }
+        .foot,.blog,.tag{
+            width: 350px;
+        }
+        .foot{
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+        }
+        .blog{
+            display: flex;
+            flex-direction: column;
+        }
+        .post{
+            display: flex;
+            padding: 8px;
+           
+        }
+        .post:nth-of-type(1){
+            border-bottom: 0.5px solid gainsboro;
+        }
+        .post:hover{
+            background-color: lightgray;
+        }
+        li{
+
+            list-style: none;
+            padding: 2px;
+            background-color: rgb(103, 99, 99);
+            margin: 2px;
+            color: white;
+        }
+        ul{
+            margin-top: 8px;
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 8px;
+
+        }
+        ul .active{
+            padding: 3px;
+            background-color: black;
+        }
+       
+      
+
+
+    </style>
+</head>
+<body>
+   <!---nav---------------------------------------------------->
+    <nav>
+        <div class="nav">
+        <i class="fa-solid fa-bars"></i>
+        <h2>My Food</h2>
+        <h2>Mail</h2>
+        </div>
+    </nav>
+    <main>
+        <div class="box">
+            <div class="img">
+                <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="_sandwich">
+            </div>
+            <div class="content">
+                <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img src="./steak.jpg" alt="_steak">
+            </div>
+            <div class="content">
+                <h3>Let Me Tell You About This Steak</h3>
+                <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img src="./cherries.jpg" alt="_cherris">
+            </div>
+            <div class="content">
+                <h3>Cherries, interrupted</h3>
+                <p>Lorem ipsum text praesent tincidunt ipsum lipsum.
+
+                    What else?</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img src="./wine.jpg" alt="_wine">
+            </div>
+            <div class="content">
+                <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+                <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img src="./popsicle.jpg" alt="_popsicle">
+            </div>
+            <div class="content">
+                <h3>All I Need Is a Popsicle</h3>
+                <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img src="./salmon.jpg" alt="_salmon">
+            </div>
+            <div class="content">
+                <h3>Salmon For Your Skin</h3>
+                <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img src="./sandwich.jpg" alt="_sandwich">
+            </div>
+            <div class="content">
+                <h3>The Perfect Sandwich, A Real Classic</h3>
+                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img src="./croissant.jpg" alt="_croissant">
+            </div>
+            <div class="content">
+                <h3>Le French</h3>
+                <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+        </div>
+    </main>
+     <!---------------------pagination--------------------------------------------------->
+
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a class="active" href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">&raquo;</a>
+      </div>
+      <hr>
+   
+      <article>
+        <h1>About Me, The Food Man</h1>
+        <img src="./chef.jpg" alt="_chef">
+        <div class="artsub">
+        <h3>I am Who I Am!</h3>
+        <h4>With Passion For Real, Good Food</h4>
+        <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+      </article>
+      <hr>
+      <!--footer tag-->
+      <footer>
+        <div class="foot">
+            <h2>FOOTER</h2>
+            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum,
+                 porta lectus vitae, ultricies
+                 congue gravida diam non fringilla.</p>
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        </div>
+        <div class="blog">
+            <h2>BLOG POSTS</h2>
+            <div class="post">
+                <img src="./workshop.jpg" alt="">
+                <div class="ps">
+                <h5>Lorem</h5>
+                <p>Sed mattis nunc</p>
+                </div>
+            </div>
+            <div class="post">
+                <img src="./gondol.jpg" alt="">
+                <div class="ps">
+                <h5>Ipsum</h5>
+                <p>Praes tinci sed</p>
+                </div>
+            </div>
+        </div>
+        <div class="tag">
+            <h2>POPULAR TAGS</h2>
+            <ul>
+            <li class="active">Travel</li>
+            <li>New York</li>
+            <li>Dinner</li>
+            <li>Salmon</li>
+            <li>France</li>
+            <li>Drinks</li>
+            <li>Ideals</li>
+            <li>Flavors</li>
+            <li>Cusinie</li>
+            <li>Chicken</li>
+            <li>Dressing</li>
+            <li>Fried</li>
+            <li>Fish</li>
+            <li>Duck</li>
+            </ul>
+
+        </div>
+      </footer>
+    
+
+</body>
+</html>
