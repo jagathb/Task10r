@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+       
+        /*header-----*/
+        body{
+            font-family: "Open Sans", sans-serif;
+        }
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .head{
+            height: 110vh;
+           background: linear-gradient(
+                to top, 
+                #82cfc7 0%,
+                #82cfc7 40%,
+                #4b909f 40%,
+                #4b909f 100%);
+                border-bottom-left-radius: 120px;
+                border-bottom-right-radius: 120px;
+        }
+        /*------logo design-----*/
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .lo div{
+            width: 25px;
+            height: 25px;
+            border: 2px solid black;
+            border-radius: 3px;
+            position: relative;
+            margin-right: 10px;
+            background-color: black;
+        }
+        .lo div::after{
+            position: absolute;
+            content: "";
+            width: 22px;
+            height: 22px;
+            top:-11px;
+            left: -10px;
+            border: 2px solid black;
+            background-color: #4b909f;
+            border-radius: 3px;
+        }
+        h1{
+            font-size: 30px;
+        }
+        /*----------------nav---------------*/
+        nav{
+            display: flex;
+            padding: 15px 125px 15px 125px;
+            align-items: center;
+            border-bottom: 0.1px solid rgba(243, 242, 242, 0.303);
+            position: sticky;
+            top:0;
+            background-color: #4b909f;
+        }
+        nav .logo{
+            display: flex;
+        }
+        /*--------------links--------------*/
+        
+        nav .links a{
+            font-family: "Open Sans", sans-serif;
+            text-transform:uppercase;
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 20px;
+        }
+        nav .links{
+            display: flex;
+            margin-left: 75px;
+            margin-right: 380px;
+
+        }
+        nav .links li{
+            list-style: none;
+            
+            
+        }
+        /*-------------profile login-----------*/
+      
+        .profile{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: white;
+
+        }
+        .fa-user{
+            font-size: 18px;
+            color: black;
+        }
+        /*--------head1----*/
+        .head1{
+            padding-top: 55px;
+            text-align: center;
+        }
+        .head1  h1{
+            font-size: 70px;
+            color: white;
+            font-family: "Open Sans", sans-serif;
+        }
+        .head1>p{
+            margin-top: 8px;
+            font-size: 25px;
+            color: #185077;
+            font-weight: 700;
+            font-family: "Open Sans", sans-serif;
+
+        }
+        /*---------search-box------------*/
+        .it_srh{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            width: 850px;
+            margin-left: 22%;
+            border-radius: 35px;
+            background-color:white;
+            padding: 10px;
+        }
+        .it_srh i{
+            padding: 15px;
+            
+        }
+       .it_srh input{
+        font-family: "Open Sans", sans-serif;
+        width: 100%;
+        border: none;
+        outline: none;
+        font-size: 18px;
+       }
+       ::placeholder{
+        font-family: "Open Sans", sans-serif;
+        
+       }
+       .it_srh p{
+        font-family: "Open Sans", sans-serif;
+        padding: 10px 35px 10px 35px;
+        color: white;
+        border-radius: 25px;
+        background-color: #82cfc7;
+       }
+       /*---------------head part2----------*/
+       .head2{
+        
+        display: flex;
+        justify-content: center;
+        font-family: "Open Sans", sans-serif;
+        margin-top: 35px;
+        font-size: 22px;
+       }
+       .web img{
+        width: 260px;
+       
+       }
+       .head2 .web{
+        padding: 22px;
+        width: 400px;
+        border: 1px solid white;
+        margin-right: 35px;
+        border-radius: 18px;
+        color: black;
+        background-color: white;
+        
+        
+       }
+       .web_de{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      
+       }
+       .web_de span{
+        border-radius: 5px;
+        padding: 3px;
+        font-size: 12px;
+        font-weight: 600;
+        color: white;
+        background-color: #01aef8;
+       }
+       .web p{
+        margin-top: 8px;
+        font-size: 20px;
+        color:#919193;
+       }
+       .head2 .finance{
+        width: 620px;
+        border-radius: 18px;
+        background-image: url(https://as2.ftcdn.net/v2/jpg/02/68/73/69/1000_F_268736974_pFiPUxyhe3nT1ziSUQ229N1hRt89n8IS.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+        font-size: 22px;
+        
+
+       }
+       .head2 .finance .bk{
+        border-radius: 18px;
+        padding: 25px;
+        background:linear-gradient(75deg, #84c4c479,#184f77bc);
+        width: 100%;
+        height: 100%;
+      
+       }
+       .finance .fin{
+        display: flex;
+        justify-content: space-between;
+       }
+       .fin span{
+       font-size: 14px;
+       background-color: #01aef8;
+       border-radius: 5px;
+       padding: 3px;
+       font-weight: 600;
+       color: white;
+       }
+       .finance p{
+        margin-top: 8px;
+        font-size: 20px;
+        color:white;
+        padding-right: 15px;
+        margin-bottom: 25px;
+       }
+       .finance>span{
+        background-color:#82cfc7;
+        color: white;
+        border-radius: 20px;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 8px 12px 8px 12px;
+       }
+       .finance .share{
+        display: flex;
+        align-items: center;
+        position: relative;
+       top:110px
+       }
+       .share .icons{
+        justify-content: space-between;
+        width: 480px;
+        display: flex;
+        align-items: center;
+       }
+       .icons .icon{
+        display: flex;
+       }
+       .icons .profile{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: #82cfc7;
+            margin-right: 18px;
+       }
+       .icons .profile i{
+        font-size: 16px;
+       }
+       /*----------------------------------main-----------------------------------*/
+       .main{
+        font-family: "Open Sans", sans-serif;
+       height: 90vh;
+        
+       }
+       .main h1{
+        margin-top: 55px;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 55px;
+       }
+       li{
+        list-style: none;
+       }
+       a{
+        text-decoration: none;
+        color: #4f4f4f;
+       }
+       .main .links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        border-bottom: 1px solid #9191932b;
+       }
+       .main .links li{
+        padding: 22px;
+        font-size: 25px;
+       }
+       .main .links li:hover{
+        border-bottom:1px solid #01aef8;
+       }
+       iframe{
+        border: none;
+        width: 100%;
+        height: 70%;
+       }
+      /* .main .design{
+        display: flex;
+        margin-top: 45px;
+        justify-content:center;
+        align-items: center;
+       }
+       .main .web{
+        padding: 22px;
+        width: 400px;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        margin-right: 35px;
+        border-radius: 18px;
+        color: black;
+        background-color: white;
+        
+        
+       }
+       .main .web_de{
+        font-size: 26px;
+        font-weight: 100;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      
+       }
+       .main .web_de span{
+        border-radius: 5px;
+        padding: 3px;
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+        background-color: #01aef8;
+       }
+       .main .web p{
+        margin-top: 8px;
+        font-size: 20px;
+        color:#919193;
+       }
+       .lastimg{
+        margin-left: 55px;
+        width: 150px;
+
+       }
+       .lastimg img{
+        width: 100%;
+       }*/
+       /*---------------mainpart2---------*/
+       .main_part2{
+        margin-top: 45px;
+        width: 100%;
+        height: 110vh;
+        background-image: url(./1638079565-Untitleddesign-2021-11-28T100532825.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: "Open Sans", sans-serif;
+       }
+       .main_part2 .how{
+       background-color:#046d9669;
+       width: 100%;
+       height: 100%;
+       color: white;
+       }
+       .how h1{
+        font-size: 55px;
+       }
+       
+       .how{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        padding: 55px;
+       }
+       .how1{
+        width: 950px;
+        display: flex;
+        margin-top: 55px;
+        position: relative;
+        z-index: 1;
+       }
+       .how1 .height{
+        position: absolute;
+        height: 60%;
+        width: 8px;
+        background-color: #82cfc7;
+        top:55px;
+        left: 35px;
+        z-index: -1;
+
+       }
+       .icon_p{
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        background-color: #82cfc7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 105px;
+       }
+       .icon_p .icon{
+        border-radius: 50%;
+        border: 3px solid white;
+       }
+       .icon_p .icon i{
+        padding: 20px;
+        font-size: 18px;
+
+       }
+       .how_part1{
+        margin-right: 35px;
+       }
+       
+       .how_part2 .cont{
+        margin-bottom: 55px;
+       }
+       .cont h3{
+        font-size: 22px;
+        margin-bottom: 10px;
+       }
+       .cont p{
+        font-size: 18px;
+        line-height: 30px;
+       }
+       .mainfoot{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .mainfoot p{
+        margin-right: 25px;
+       }
+       .mainfoot a{
+        padding: 8px 16px 8px 16px;
+        border: 2px solid white;
+        color: white;
+        border-radius: 18px;
+       }
+       /*---------------------faq--------------------------*/
+       .faq{
+        width: 100%;
+        height: 100vh;
+        padding-top: 95px;
+        padding-left: 75px;
+        padding-right: 75px;
+       }
+       .faq h1{
+        width: 720px;
+        font-size: 55px;
+        font-weight: 700;
+       }
+       .faq_1{
+        display: flex;
+        margin-top: 25px;
+        align-items: center;
+        height: 420px;
+      
+       }
+       .faq_1 .img{
+        width: 40%;
+        height: 100%;
+        margin-right: 15px;
+       }
+       .faq_1 img{
+        width: 100%;
+        height: 100%;
+       }
+       .faq_cont{
+       
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+       }
+
+       details > summary{
+        display: flex;
+        justify-content: space-between;
+        font-weight: 700;
+        font-size: 24px;
+        padding: 8px;
+        width: 720px;
+        border-radius: 25px;
+       }
+       #active{
+        background-color: #e7f1fd;
+        border-radius: 25px;
+       }
+       details p{
+        padding: 8px;
+        width: 620px;
+        text-align: justify;
+        line-height: 32px;
+        font-size: 18px;
+        color:#4f4f4f;
+       }
+       /*----------------footer----------------*/
+       .footer{
+        width: 100%;
+        height: 70vh;
+        background-color: #f0f7fd;
+       }
+       .footer h1{
+        text-align: center;
+        font-size: 45px;
+        padding-top: 45px;
+       }
+       .foot_part{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 35px;
+       }
+       .map{
+        width: 420px;
+        height: 220px;
+        margin-right: 25px;
+        border-radius: 15px;
+       }
+       .foot_part .address{
+        width: 420px;
+        padding: 22px;
+       }
+       .address .add_head{
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #919193;
+        margin-bottom: 8px;
+
+       }
+       .add_head h4{
+        font-size: 27px;
+        margin-bottom: 8px;
+       }
+       .add_head p{
+        font-size: 18px;
+        margin-bottom: 8px;
+        line-height: 35px;
+       }
+       .add_foot{
+        display: flex;
+        flex-direction: column;
+       }
+       .add_foot .phone,.add_foot .email{
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+       }
+       .add_foot .phone h3,.add_foot .email h3{
+       margin-right: 8px;
+       }
+       .add_foot .phone p,.add_foot .email p{
+       color: #01aef8;
+       }
+       .map img{
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+       }
+       /*---------------------------------last------------------------*/
+       .last {
+        display: flex;
+        height: 50vh;
+        margin-top:45px ;
+        padding:0 45px 0 45px;
+        justify-content: space-between;
+        align-items: center;
+       }
+       
+        .last>div{
+        width: 220px;
+        height: 180px;
+       }
+       .resource h2{
+        margin-bottom: 15px;
+       }
+       .resource ul li{
+        line-height:28px;
+        font-size: 18px;
+       }
+       .resource ul li a{
+        color: #82cfc7;
+       }
+       .info h2{
+        margin-bottom: 15px;
+       }
+       .info p{
+        line-height: 28px;
+        color: #82cfc7;
+       }
+       .copy p{
+        text-align:left;
+        margin-bottom: 15px;
+       }
+       .copy select{
+        margin-bottom: 20px;
+        padding: 10px;
+        outline: none;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+        background-color:#82cfc7;
+        color: white;
+       }
+       .copy p span{
+        color:#84c4c4;
+       }
+       .last .lo div::after{
+         background-color: white; 
+        }
+       
+    </style>
+</head>
+<body>
+       <!--------------nav tag----------->
+       <nav>
+        <div class="logo">
+            <div class="lo">
+                <div></div>
+            </div>
+            <h1>Topic</h1>
+
+        </div>
+        <div class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#BT">Browse topics</a></li>
+            <li><a href="#hw">How it work</a></li>
+            <li><a href="#faq">faqs</a></li>
+            <li><a href="#cont">contact</a></li>
+            <li><a href="#pages">pages</a></li>
+
+        </div>
+        <div class="profile">
+            <i class="fa-regular fa-user"></i>
+
+        </div>
+    </nav>
+    <div class="head">
+     
+        <!----header part1--------------->
+        <div class="head1">
+            <h1>Discover. Learn. Enjoy</h1>
+            <p>plateform for creatives around the world</p>
+            <!-----------search box------------------->
+            <div class="it_srh">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Desgin, Code, Marketing, Finance ...">
+                <p>search</p>
+
+            </div>
+        </div>
+        <!-------------------head part2------------------------->
+        <div class="head2">
+            <div class="web">
+                <div class="web_de">
+                <h4>Web Design</h4>
+                <span>14</span>
+                </div>
+                <p>When you search for free CSS templates,you will notice that templateMo
+                    is one of the best Website.
+                </p>
+                <img src="./undraw_Remote_design_team_re_urdx.png" alt="">
+            </div>
+            <!------------finance--------------->
+            <div class="finance">
+                <div class="bk">
+                <div class="fin">
+                    <h4>Finance</h4>
+                    <span>25</span>
+                </div>
+                <p>Topic Listing Template includes homepage,listing page,
+                    detail page,and contact page.You can feel free to edit
+                    and adapt for your CMS requirements
+                </p>
+                <span>Learn More</span>
+               <!---share---------------------------------------------->
+                <div class="share">
+                    <p>Share :</p>
+                    <div class="share1">
+                        <div class="icons">
+                            <div class="icon">
+                            <div class="profile">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div class="profile">
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                            <div class="profile">
+                                <i class="fa-brands fa-pinterest"></i>
+                            </div>
+                            </div>
+                            <i class="fa-solid fa-bookmark"></i>
+                        </div>
+                    </div>
+                </div>
+                <!---background-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <!--------------------main Heading--------------------->
+        <h1 id="BT">browse Topics</h1>
+        <!---------------------main Links-------------->
+        <div class="links">
+            <li><a href="./design.htm" target="topics">Design</a></li>
+            <li><a href="./market.html" target="topics">Marketing</a></li>
+            <li><a href="./finance.html" target="topics">Finance</a></li>
+            <li><a href="./music.html" target="topics">Music</a></li>
+            <li><a href="./education.html" target="topics">Education</a></li>
+        </div>
+        <!------------------------------------Design box-->
+        <iframe src="./design.htm" frameborder="0" name="topics"></iframe>
+      
+      <!--- <div class="design">
+            <div class="web">
+                <div class="web_de">
+                <h4>Web Design</h4>
+                <span>14</span>
+                </div>
+                <p>Topic Listing Template based on Boot strap 5
+                </p>
+                <img src="./undraw_Remote_design_team_re_urdx.png" alt="">
+            </div>
+           
+            <div class="web">
+                <div class="web_de">
+                <h4>Graphic</h4>
+                <span>75</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.
+                </p>
+                <img src="./undraw_Redesign_feedback_re_jvm0.png" alt="">
+            </div>
+            
+            <div class="web">
+                <div class="web_de">
+                <h4>Logo Design</h4>
+                <span>100</span>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.
+                </p>
+                <div class="lastimg">
+                <img src="./colleagues-working-cozy-office-medium-shot.png" alt=""  >
+                </div>
+            </div>
+        </div>-->
+
+    </div>
+    <!----------------------------------main_part2------------------------------------------->
+    <div class="main_part2" id="hw">
+        <div class="how" >
+            <h1>How does it work?</h1>
+            <div class="how1">
+                <div class="how_part1">
+                    <div class="icon_p">
+                        <div class="icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+
+                    <div class="icon_p">
+                        <div class="icon">
+                            <i class="fa-solid fa-bookmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="icon_p">
+                        <div class="icon">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                    </div>
+                    <div class=" height"></div>
+                </div>
+                <div class="how_part2">
+                    <div class="cont">
+                        <h3>Search your favourite topic</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum totam molestiae temporibus, autem aut praesentium quasi fugit, dicta ullam vel suscipit recusandae nemo hic odit esse eligendi eveniet. Illo deserunt quisquam nemo, odit earum voluptatem!</p>
+                    </div>
+
+                    <div class="cont">
+                        <h3>Bookmark & Keep it for yourself</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit iste, quo praesentium similique provident nihil. Quidem sint voluptatum rem hic, vero blanditiis minima quaerat laudantium aspernatur aliquam accusantium impedit quam minus quasi odit praesentium eum.</p>
+                    </div>
+
+                    <div class="cont">
+                        <h3>Read & Enjoy</h3>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quibusdam ullam ut sit architecto, hic tempora odit perspiciatis similique assumenda inventore, eius dolores explicabo dolor ipsa eum id laborum! Quo mollitia temporibus eum nesciunt ea!
+                       </p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="mainfoot">
+                <p>want to learn more ?</p>
+                <a href="">check out youtube</a>
+            </div>
+
+        </div>
+
+    </div>
+    <!------------------------------------------------FAQ----------------------->
+    <div class="faq" id="faq">
+        <h1>
+            Frequently Asked
+            Questions
+        </h1>
+
+        <div class="faq_1">
+            <div class="img">
+                <img src="./curiosity-people-concept-illustration_114360-11034.jpg" alt="">
+            </div>
+            <div class="faq_cont">
+                <details >
+                    <summary id="active">what is Topic Listing ? <span><i class="fa-solid fa-angle-up"></i></span></summary>
+                    <p>Topic listing is free Bootstrap 5 css template.
+                        <strong>You are not allowed to redistibute this template</strong>
+                        on any other template collection website without our permission.
+                        Please contact TemplateMo for more detail.
+                    </p>
+                    <p>Thank you.</p>
+                </details>
+                <details>
+                    <summary>how to find a topic ? <span><i class="fa-solid fa-angle-up"></i></span></summary>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam repellat impedit adipisci, quia nihil ullam?</p>
+                    <p>Thank you.</p>
+                </details>
+                <details>
+                    <summary>Does it need to paid ? <span><i class="fa-solid fa-angle-up"></i></span></summary>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus deserunt accusamus, cumque ea eaque blanditiis.</p>
+                    <p>Thank you.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+    <!---------------------------footer------------------------------------------>
+    <div class="footer" id="cont">
+        <h1>Get in touch</h1>
+        <div class="foot_part">
+            <div class="map">
+                <img src="./hero_geocoding_api.png" alt="">
+            </div>
+            <div class="address">
+               <div class="add_head">
+                <h4>Head Office</h4>
+                <p>Bay st & Larkin St, san Francisco,CA 94109,United States</p>
+               </div>
+               <div class="add_foot">
+                <div class="phone">
+                    <h3>Phone</h3>
+                    <p>305-240-9671</p>
+                </div>
+                <div class="email">
+                    <h3>email</h3>
+                    <p>info@company.com</p>
+                </div>
+                
+               </div>
+            </div>
+
+            <div class="address">
+                <div class="add_head">
+                 <h4>Dubai Office</h4>
+                 <p>Burj park,DownTown Dubai,United Arab Emirates</p>
+                </div>
+                <div class="add_foot">
+                 <div class="phone">
+                     <h3>Phone</h3>
+                     <p>110-220-3400</p>
+                 </div>
+                 <div class="email">
+                     <h3>email</h3>
+                     <p>info@company.com</p>
+                 </div>
+                 
+                </div>
+             </div>
+          </div>
+    </div>
+    <!-------------------------------footerlast-->
+    <div class="last" id="pages">
+        <div class="logo">
+            <div class="lo">
+                <div></div>
+            </div>
+            <h1>Topic</h1>
+        </div>
+
+        <div class="resource">
+            <h2>Resources</h2>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">How it Works</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <h2>Information</h2>
+            <p>305240-6971</p>
+            <p>info@company.com</p>
+        </div>
+
+        <div class="copy">
+            <select name="Languages" id="lang">
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Telugu">Telugu</option>
+                <option value="Tamil">Tamil</option>
+                <option value="Kanada">Kanada</option>
+            </select>
+
+            <p>copy right &copy; 2048 Topic Listing Center.
+                All rights reserved.
+            </p>
+
+            <p>Desgin: <span>TemplateMo</span></p>
+        </div>
+        
+    </div>
+</body>
+</html>
